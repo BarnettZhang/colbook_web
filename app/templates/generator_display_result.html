@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}My History{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-8">
+                <div class="progress mx-auto mt-4 mb-4" style="height: 50px;width: 100%">
+                    <div class="progress-bar h6" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                         aria-valuemin="0"
+                         aria-valuemax="100">View Result
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="{{ processed_image_filename }}" class="rounded mx-auto d-block" width="500px" height=auto
+                     alt="Result Image">
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Your Image:</h5>
+                        <p class="text-left">Algorithm: {{ algorithm }}</p>
+                        {% for key in parameter %}
+                            <p class="text-left">{{ key }} {{ parameter[key] }}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form method="post">
+                    <button type="submit" class="btn btn-primary">Download Image</button>
+                </form>
+            </div>
+            <div class="col">
+                <a href="{{ url_for('main.painter') }}" type="button" class="btn btn-primary">Adjust Your Image</a>
+            </div>
+            <div class="col">
+                <a href="{{ url_for('main.generator') }}" type="button" class="btn btn-primary">Generate New Image</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Coherent-Line-Drawing"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\opt\;CMake Files\..\..\..\..\opt\homebrew\;CMake Files\..\..\..\..\opt\homebrew\lib\;CMake Files\..\..\..\..\opt\homebrew\lib\cmake\;CMake Files\..\..\..\..\opt\homebrew\lib\cmake\opencv4\;CMake Files\..\..\..\..\opt\homebrew\lib\cmake\Boost-1.76.0\;CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_headers-1.76.0\;CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_program_options-1.76.0\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cld">
+				<Option output="/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/cld" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_PROGRAM_OPTIONS_DYN_LINK"/>
+					<Add directory="/Users/xuesiyang/Documents/ETF+CLD"/>
+					<Add directory="/opt/homebrew/include"/>
+					<Add directory="/opt/homebrew/Cellar/opencv/4.5.3_2/include/opencv4"/>
+					<Add directory="/opt/homebrew/Cellar/gcc/11.2.0/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../include/c++/11.1.0"/>
+					<Add directory="/opt/homebrew/Cellar/gcc/11.2.0/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../include/c++/11.1.0/aarch64-apple-darwin20"/>
+					<Add directory="/opt/homebrew/Cellar/gcc/11.2.0/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../include/c++/11.1.0/backward"/>
+					<Add directory="/opt/homebrew/Cellar/gcc/11.2.0/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/gcc/11.2.0/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 cld"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cld/fast">
+				<Option output="/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/cld" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_PROGRAM_OPTIONS_DYN_LINK"/>
+					<Add directory="/Users/xuesiyang/Documents/ETF+CLD"/>
+					<Add directory="/opt/homebrew/include"/>
+					<Add directory="/opt/homebrew/Cellar/opencv/4.5.3_2/include/opencv4"/>
+					<Add directory="/opt/homebrew/Cellar/gcc/11.2.0/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../include/c++/11.1.0"/>
+					<Add directory="/opt/homebrew/Cellar/gcc/11.2.0/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../include/c++/11.1.0/aarch64-apple-darwin20"/>
+					<Add directory="/opt/homebrew/Cellar/gcc/11.2.0/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/../../../../../../include/c++/11.1.0/backward"/>
+					<Add directory="/opt/homebrew/Cellar/gcc/11.2.0/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/gcc/11.2.0/lib/gcc/11/gcc/aarch64-apple-darwin20/11.1.0/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 cld/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/include/CLD.h">
+			<Option target="cld"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/include/ETF.h">
+			<Option target="cld"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/include/postProcessing.h">
+			<Option target="cld"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/src/CLD.cpp">
+			<Option target="cld"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/src/ETF.cpp">
+			<Option target="cld"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/src/cmd.cpp">
+			<Option target="cld"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/src/postProcessing.cpp">
+			<Option target="cld"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/../../../../opt/homebrew/lib/cmake/BoostDetectToolset-1.76.0.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/../../../../opt/homebrew/lib/cmake/opencv4/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/../../../../opt/homebrew/lib/cmake/opencv4/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/../../../../opt/homebrew/lib/cmake/opencv4/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/../../../../opt/homebrew/lib/cmake/opencv4/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/../../../../opt/homebrew/lib/cmake/Boost-1.76.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\Boost-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/../../../../opt/homebrew/lib/cmake/Boost-1.76.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\Boost-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/../../../../opt/homebrew/lib/cmake/boost_headers-1.76.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_headers-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/../../../../opt/homebrew/lib/cmake/boost_headers-1.76.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_headers-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/../../../../opt/homebrew/lib/cmake/boost_program_options-1.76.0/boost_program_options-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_program_options-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/../../../../opt/homebrew/lib/cmake/boost_program_options-1.76.0/boost_program_options-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_program_options-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/../../../../opt/homebrew/lib/cmake/boost_program_options-1.76.0/libboost_program_options-variant-mt-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_program_options-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/../../../../opt/homebrew/lib/cmake/boost_program_options-1.76.0/libboost_program_options-variant-mt-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_program_options-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/../../../../opt/homebrew/lib/cmake/boost_program_options-1.76.0/libboost_program_options-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_program_options-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/xuesiyang/Documents/ETF+CLD/../../../../opt/homebrew/lib/cmake/boost_program_options-1.76.0/libboost_program_options-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_program_options-1.76.0\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}My History{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-8">
+                <div class="progress mx-auto mt-4 mb-4" style="height: 50px;width: 100%">
+                    <div class="progress-bar h6" role="progressbar" style="width: 33%;" aria-valuenow="33"
+                         aria-valuemin="0"
+                         aria-valuemax="100">Select Algorithm
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card" style="width: 20rem;">
+                    <!-- image source should be changed later (use other image) -->
+                    <img src=".\static\image\Canny_s.png" class="card-img-top" alt="Canny Algorithm Example">
+                    <div class="card-body">
+                        <h5 class="card-title">Canny</h5>
+                        <p class="card-text">Canny algorithm -- can produce coloring pages with very narrow outline</p>
+                        <a href="{{ url_for('main.generator_enter_parameter_canny') }}" class="btn btn-primary">Upload Image</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 20rem;">
+                    <!-- image source should be changed later (use other image) -->
+                    <img src=".\static\image\PrewittFilter_s.png" class="card-img-top" alt="Prewitt Algorithm Example">
+                    <div class="card-body">
+                        <h5 class="card-title">Prewitt filter algorithm</h5>
+                        <p class="card-text">Prewitt filter algorithm -- an alternative method of LOG algorithm for realistic landscape input photos</p>
+                        <a href="{{ url_for('main.generator_enter_parameter_simple') }}" class="btn btn-primary">Upload Image</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 20rem;">
+                    <!-- image source should be changed later (use other image) -->
+                    <img src=".\static\image\LOG_s.png" class="card-img-top" alt="LOG Algorithm Example">
+                    <div class="card-body">
+                        <h5 class="card-title">LOG algorithm</h5>
+                        <p class="card-text">LOG -- a very simple and fast method, most suitable for cartoon style input images</p>
+                        <a href="{{ url_for('main.generator_enter_parameter_LOG') }}" class="btn btn-primary">Upload Image</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card" style="width: 20rem;">
+                    <!-- image source should be changed later (use other image) -->
+                    <img src=".\static\image\ETFFDoG_s.png" class="card-img-top" alt="ETF Algorithm Example">
+                    <div class="card-body">
+                        <h5 class="card-title">ETF + CLD</h5>
+                        <p class="card-text">ETF + CLD -- the most advanced algorithm in our app, support high degree of customization</p>
+                        <a href="{{ url_for('main.generator_enter_parameter_ETF') }}" class="btn btn-primary">Upload Image</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+
+
+{% endblock %}

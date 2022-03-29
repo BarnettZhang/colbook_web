@@ -1,0 +1,116 @@
+<!-- Use the base template -->
+{% extends "base.html" %}
+
+{% block title %} Algorithms - Colbook {% endblock %}
+{% block content %}
+
+<main>
+      <!-- Make the text fill the line evenly -->
+      <style>
+        div
+        {
+        text-align:justify;
+        text-justify:inter-word;
+        }
+      </style>
+
+      <div class="container bg-light">
+        
+        <div class="row">
+          <div class="col">
+            <br>
+            <h1>Algorithms</h1>
+            <br>
+          </div>
+        </div>
+
+        <!-- Implement a carousel to display different algorithms -->
+        <div class="row">          
+            <div class="col align-self-center">
+            <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="background-color:darkgray"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1" style="background-color:darkgray"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2" style="background-color:darkgray"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3" style="background-color:darkgray"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src=".\static\image\ETFFDoG.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src=".\static\image\LOG.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src=".\static\image\PrewittFilter.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src=".\static\image\Canny.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Discriptions of different algorithms -->
+        <div class="row">
+          <div class="col">
+            <br><br>
+            <h2>ETF+CLD Algorithm</h2>
+            <br>
+          </div>
+          <div class="col">
+            <br><br>
+            <h2>LOG Algorithm</h2>
+            <br>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <p>
+              ETF+CLD Algorithm extracts a set of coherent, smooth, and stylistic lines that effectively capture and convey important shapes in the image. Many parameters are involved in this algorithm which enable users to process images freely to a great extent.
+            </p>
+            <p>
+              But a high-contrast background will be filled with a dense set of lines although this area may be perceptually unimportant. FDoG filter operates on a local kernel and thus a global- scale subjective contour may be hard to detect.
+            </p>
+          </div>
+          <div class="col">
+            <p>
+              LOG (Laplace of Gaussian filter) is a very simple and fast algorithm. It is the most recommended algorithm when generating cartoon style input image. It can clearly delineate the characters and objects in the image. 
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <br><br>
+            <h2>Prewitt Filter Algorithm</h2>
+            <br>
+          </div>
+          <div class="col">
+            <br><br>
+            <h2>Canny Algorithm</h2>
+            <br>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <p>
+              Prewitt Filter is an alternative method when LOG produced a disappointing result for a realistic image input. Its performance will be better for these input.             
+            </p>
+            <p>
+              But there is a kindly reminder: an input image from real world (e.g. photo) is usually not a good candidate for generating an image suitable for coloring. Please choose cartoon style or abstract style images. 
+            </p>
+          </div>
+          <div class="col">
+            <p>
+              Canny algorithm can produce coloring page with a narrow and pale outline. This is a alternative for user who like this style. 
+            </p>
+          </div>
+        </div>
+      
+      </div>
+    </main>
+{% endblock %}

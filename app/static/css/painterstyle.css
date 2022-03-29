@@ -1,0 +1,53 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#canvas{
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.canvas_tools {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.canvas_tools .canvas_colors {
+    height: 40px;
+    width: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid black;
+    align-self: center;
+    margin: 0 10px;
+}
+
+.canvas_tools .canvas_btns {
+    align-self: center;
+    width: 100px;
+    height: 40px;
+    border: 2px solid white;
+    cursor: pointer;
+    background: black;
+    color: white;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.color_picker {
+    align-self: center;
+    margin: 0 15px;
+}
+
+.line_width {
+    align-self: center;
+    margin: 0 15px;   
+}

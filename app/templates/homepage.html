@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %} Homepage - Colbook {% endblock %}
+{% block content %}
+    <main>
+
+      <!-- Make the text fill the line evenly -->
+      <style>
+        div
+        {
+        text-align:justify;
+        text-justify:inter-word;
+        }
+      </style>
+
+      <div class="container">
+ 
+        <!-- Show the logo of the website -->
+        <div class="row" style="background:white">
+          <div class="col">
+            <br>
+            <img src=".\static\image\colbook_logo.png" class="d-block w-100" alt="logo">
+            <br>
+          </div>
+        </div>
+        
+        <!-- Show texts -->
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col" >
+            <br>
+            <h2>Our Inspirations</h2>
+            <br>
+          </div>
+          <div class="col-2"></div>
+          <div class="col" >
+            <br>
+            <h2>Our Features</h2>
+            <br>
+          </div>
+          <div class="col-1"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col">
+            <p>Coloring book is one of the most important mementoes of most people's childhoods. </p>
+            <p>We clumsily but romantically gave the world the colours we dreamed of with paintbrush. </p>
+            <p>But as time goes on, we have gradually lost the surprise and excitement when we opened it as children. </p>
+            <p>This is what Colbook wishs: bring back these forgotten memories and joys! </p>
+            <p></p>
+          </div>
+          <div class="col-2"></div>
+          <div class="col">
+            
+            <h5>Various Algorithms</h5> 
+            <p> Freely explore which style is your favorite! </p>
+            
+            <br><h5>Adjustable Parameters</h5> 
+            <p> Make the generator deal original image more specifically! </p>
+            
+            <br><h5>Image Editor</h5>
+            <p>Change any lines you are not satisfied!</p>
+            
+            <br><h5>Transform History</h5>
+            <p>Quickly find your parameter settings and output images!</p>
+          </div>
+          <div class="col-1"></div>
+        </div>
+      </div>
+
+    </main>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}My History{% endblock %}
+{% block content %}
+    <h3>
+        <div class="mid_relative">My History</div>
+    </h3>
+    {% if historys|length %}
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-sm-4" id="mid">
+                {% for history in historys %}
+                    <img src="{{ history.processedImageName }}" width=100px height=100px
+                         class="rounded mx-auto d-block history-thumbnail" alt="image thumbnail">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-light" data-toggle="modal"
+                            data-target="#exampleModal{{ loop.index }}">
+                        See Details
+                    </button>
+
+                    <div class="modal fade" id="exampleModal{{ loop.index }}" tabindex="-1"
+                         aria-labelledby="exampleModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Image generated
+                                        at: {{ history.timestamp }}</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="{{ history.processedImageName }}" class="rounded mx-auto d-block"
+                                         alt="image" width="400px" height=auto>
+                                    <p>Algorithm: {{ history.algorithm }}.</p>
+                                    <p>Parameters: {{ history.parameter }}</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                    </button>
+                                    <form method="post">
+                                        <button type="submit" class="btn btn-primary" name="process_image" value="{{ history.processedImageName }}">Download Image</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="col"></div>
+        </div>
+    {% else %}
+        <p>You do not have any history image. </p>
+    {% endif %}
+{% endblock %}

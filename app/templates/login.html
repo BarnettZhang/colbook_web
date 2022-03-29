@@ -1,0 +1,46 @@
+<!-- Extend from the base.html -->
+{% extends "base.html" %}
+{% block title %} Login - Colbook {% endblock %}
+{% block content %}
+{% from "_formhelpers.html" import render_field %}
+
+    <!-- The entire container has three rows -->
+    <div class="container">
+        <!-- The first row is used to provide vertical spaces for the login card -->
+        <div class="row"> <br><br><br><br> </div>
+        <!-- The second row is used to display login card -->
+        <!-- The entire row has three columns -->
+        <div class="row">
+            <!-- The first column is used to provide horizontal spaces for the login card -->
+            <div class="col-3"></div>
+            <!-- The second cloumn is used to display login card -->
+            <div class="col-6">
+                <!-- Create a card -->
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class ="text-center">Login</h1> 
+                        <br>
+                        <!-- Create the login form -->                   
+                        <form method=post novalidate>
+                            {{ form.csrf_token }}
+                            <dl>
+                                {{ render_field(form.username, class='form-control') }}
+                                {{ render_field(form.password, class='form-control') }}
+                                <br>
+                                <!-- Create the submit button -->
+                                <input type=submit value='Login' class='btn btn-primary'>
+                            </dl>
+                        </form>
+                        <!-- Provide a link to signup page -->
+                        <p>Don't Have An Account? <a href="{{ url_for('auth.signup') }}">Sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- The third column is also used to provide horizontal spaces for the login card -->
+            <div class="col-3"></div>
+        </div>
+        <!-- The third row is also used to provide vertical spaces for the login card -->
+        <div class="row"> <br><br><br><br> </div>
+    </div>
+
+{% endblock %}

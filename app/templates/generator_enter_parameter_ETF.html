@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}My History{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-8">
+                <div class="progress mx-auto mt-4 mb-4" style="height: 50px;width: 100%">
+                    <div class="progress-bar h6" role="progressbar" style="width: 66%;" aria-valuenow="66"
+                         aria-valuemin="0"
+                         aria-valuemax="100">Enter Parameters/Upload Image
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-8">
+                <img id="output" width="400" height=auto/>
+                <script>
+                    var loadFile = function (event) {
+                        var output = document.getElementById('output');
+                        output.src = URL.createObjectURL(event.target.files[0]);
+                        output.onload = function () {
+                            URL.revokeObjectURL(output.src) // free memory
+                        }
+                    };
+                </script>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-8">
+                <form method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Upload your image:</label>
+                        <input type="file" name="file" accept="image/*" onchange="loadFile(event)">
+
+                    </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-8">
+                <div class="form-group">
+                    <label for="ETFParameter">ETF Iteration:*</label>
+                    {# can set maximum value in form by using "max=100"#}
+                    <input type="number" class="form-control" id="ETF_iter" placeholder="Enter ETF Iteration (Default: 1)" name="ETF_iter" required="true" value="1">
+                    <small id="emailHelp" class="form-text text-muted">ETF iteration: refining n times ETF</small>
+                    <label for="ETFParameter">CLD Iteration:*</label>
+                    <input type="number" class="form-control" id="CLD_iter" placeholder="Enter CLD Iteration (Default: 3)" name="CLD_iter" required="true" value="3">
+                    <small id="emailHelp" class="form-text text-muted">CLD iteration: iterate n times FDoG</small>
+                    <label for="ETFParameter">Sigma:*</label>
+                    <input type="number" class="form-control" id="sigma" placeholder="Enter Sigma" name="sigma" required="true">
+                    <small id="emailHelp" class="form-text text-muted">Sigma: line width</small>
+                    <label for="ETFParameter">Rho:*</label>
+                    <input type="number" step="0.01" class="form-control" id="rho" placeholder="Enter Rho (Recommend: 0.9 ~ 1)" name="rho" required="true">
+                    <small id="emailHelp"  class="form-text text-muted">Rho: noise</small>
+                    <label for="ETFParameter">Tau:*</label>
+                    <input type="number" step="0.01" class="form-control" id="tau" placeholder="Enter Tau (Recommend: 0.9 ~ 1)" name="tau" required="true">
+                    <small id="emailHelp" class="form-text text-muted">Tau: thresholding</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Process Algorithm</button>
+                </form>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}

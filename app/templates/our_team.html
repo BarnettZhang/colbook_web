@@ -1,0 +1,109 @@
+<!-- Use the base template -->
+{% extends "base.html" %}
+
+{% block title %} Our Teams - Colbook {% endblock %}
+{% block content %}
+    <main>
+
+        <!-- Make photos have the same sizes -->
+        <style>
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+
+        <div class="container overflow-hidden">
+
+            <div class="row">
+                <div class="col">
+                    <br>
+                    <h1>Our Teams</h1>
+                </div>
+            </div>
+
+            <!-- Show photos of the algorithm team -->
+            <div class="row mt-3 align-items-center">
+                <div class="col align-self-center">
+                    <div class="p-3 border bg-light">
+                        <img src=".\static\image\Lizhong.png" class="img-fluid" alt="Lizhong">
+                    </div>
+                </div>
+                <div class="col align-self-center">
+                    <div class="p-3 border bg-light">
+                        <img src=".\static\image\Xuesi.png" class="img-fluid" alt="Xuesi">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Show discriptions of the algorithm team  -->
+            <div class="row mt-3 align-items-center">
+                <div class="col align-self-center">
+                    <div class="p-3 border bg-light">
+                        <br>
+                        <h3>Algorithm Team</h3>
+                        <br>
+                        <p>Members: <strong>Wang, Lizhong</strong> and <strong>Yang, Xuesi</strong>.</p>
+                        <p>Tasks: Find and implement suitable algorithms for the coloring pages generator.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Show photos of the frontend team -->
+            <div class="row mt-3 align-items-center">
+                <div class="col align-self-center">
+                    <div class="p-3 border bg-light">
+                        <img src=".\static\image\Zipei.png" class="img-fluid" alt="Zipei">
+                    </div>
+                </div>
+                <div class="col align-self-center">
+                    <div class="p-3 border bg-light">
+                        <img src=".\static\image\Zhiyuan.png" class="img-fluid" alt="Zhiyuan">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Show discriptions of the frontend team  -->
+            <div class="row mt-3 align-items-center">
+                <div class="col align-self-center">
+                    <div class="p-3 border bg-light">
+                        <br>
+                        <h3>Frontend Team</h3>
+                        <br>
+                        <p>Members: <strong>Zhang, Zipei</strong> and <strong>Qi, Zhiyuan</strong>.</p>
+                        <p>Tasks: Develop webpages, integrate algorithms and backend.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Show photos of the backend team -->
+            <div class="row mt-3 align-items-center">
+                <div class="col align-self-center">
+                    <div class="p-3 border bg-light">
+                        <img src=".\static\image\Minghao.png" class="img-fluid" alt="Minghao">
+                    </div>
+                </div>
+                <div class="col align-self-center">
+                    <div class="p-3 border bg-light">
+                        <img src=".\static\image\Yihua.png" class="img-fluid" alt="Yihua">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Show discriptions of the backend team  -->
+            <div class="row mt-3 align-items-center">
+                <div class="col align-self-center">
+                    <div class="p-3 border bg-light">
+                        <br>
+                        <h3>Backend Team</h3>
+                        <br>
+                        <p>Members: <strong>Zhang, Minghao</strong> and <strong>Zhou, Yihua</strong>.</p>
+                        <p>Tasks: Develop web server to interact with frontend and database to store user information.</p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+    </main>
+{% endblock %}

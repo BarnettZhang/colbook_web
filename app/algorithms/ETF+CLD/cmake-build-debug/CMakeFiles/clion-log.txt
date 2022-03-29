@@ -1,0 +1,29 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/opt/homebrew/Cellar/gcc/11.2.0/bin/aarch64-apple-darwin20-gcc-11 -DCMAKE_CXX_COMPILER=/opt/homebrew/Cellar/gcc/11.2.0/bin/aarch64-apple-darwin20-g++-11 -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /Users/xuesiyang/Documents/ETF+CLD
+-- The C compiler identification is GNU 11.1.0
+-- The CXX compiler identification is GNU 11.1.0
+-- Checking whether C compiler has -isysroot
+-- Checking whether C compiler has -isysroot - yes
+-- Checking whether C compiler supports OSX deployment target flag
+-- Checking whether C compiler supports OSX deployment target flag - yes
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/homebrew/Cellar/gcc/11.2.0/bin/aarch64-apple-darwin20-gcc-11 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Checking whether CXX compiler has -isysroot
+-- Checking whether CXX compiler has -isysroot - yes
+-- Checking whether CXX compiler supports OSX deployment target flag
+-- Checking whether CXX compiler supports OSX deployment target flag - yes
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/homebrew/Cellar/gcc/11.2.0/bin/aarch64-apple-darwin20-g++-11 - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found OpenCV: /opt/homebrew/Cellar/opencv/4.5.3_2 (found version "4.5.3") 
+-- Found Boost: /opt/homebrew/lib/cmake/Boost-1.76.0/BoostConfig.cmake (found version "1.76.0") found components: program_options 
+-- Boost_INCLUDE_DIRS = /opt/homebrew/include.
+-- Boost_LIBRARIES = Boost::program_options.
+-- Boost_LIB_VERSION = 1_76.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/xuesiyang/Documents/ETF+CLD/cmake-build-debug

@@ -1,0 +1,51 @@
+<!-- Extend from the base.html -->
+{% extends "base.html" %}
+{% block title %} Sign Up - Colbook {% endblock %}
+{% block content %}
+{% from "_formhelpers.html" import render_field %}
+    
+    <!-- The entire container has three rows -->
+    <div class="container">
+        <!-- The first row is used to provide vertical spaces for the signup card -->
+        <div class="row"> <br><br><br><br> </div>
+        <!-- The second row is used to display signup card -->
+        <!-- The entire row has three columns -->
+        <div class="row">
+            <!-- The first column is used to provide horizontal spaces for the signup card -->
+            <div class="col-3"></div>
+            <!-- The second cloumn is used to display signup card -->
+            <div class="col-6">
+                <!-- Create a card -->
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class ="text-center">Signup</h1> 
+                        <br>
+                        <!-- Create the signup form -->
+                        <form method=post novalidate>
+                            {{ form.csrf_token }}
+                            <dl>
+                                {{ render_field(form.username, class='form-control') }}
+                                {{ render_field(form.email, class='form-control') }}
+                                {{ render_field(form.password, class='form-control') }}
+                                {{ render_field(form.confirm_password, class='form-control') }}
+                            </dl>
+                            <br>
+                            <!-- Create the submit button -->
+                            <button type="submit" class="btn btn-primary">Sign Up</button>
+                        </form>
+                        <br>
+                        <!-- Provide a link to login page -->
+                        <p>Already Have An Account? <a href="{{ url_for('auth.login') }}">Login</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- The third column is also used to provide horizontal spaces for the signup card -->
+            <div class="col-3"></div>
+        </div>
+        <!-- The third row is also used to provide vertical spaces for the signup card -->
+        <div class="row"> <br><br><br><br> </div>
+    </div>
+   
+{% endblock %}
+
+
